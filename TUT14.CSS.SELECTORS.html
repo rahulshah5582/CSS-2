@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    
+    <!-- Dont use inline Selector, we can use Internal or External Selector -->
+
+    <style>
+        /* css selector */
+        P{
+            color: red;
+            border: 2px solid black;
+        }
+        /* Element selector */
+        P{
+            border: 2px solid black;
+        }
+        /* id selector */
+        #redElement{
+            color: green;
+        }
+        /* class selector */
+        .redElement{
+            color: blue;
+        }
+        /* Multiple class selector */
+        .bgBlue{
+           background-color: yellowgreen;
+        }
+        /* The group selector */
+        footer, span{
+            background-color: pink;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <h3>CSS Selectors</h3>
+    
+    <p>This is a simple paragraph to demonstrate css Selectors</p>
+    
+    <!-- id is unike but class is muliple -->
+
+    <p id="redElement">This is a another simple paragraph to demonstrate "id" css Selectors</p>
+    
+    <!-- class is muliple -->
+    
+    <p id="secondPara" class="redElement">This is a another simple paragraph to demonstrate "class" css Selectors</p>
+
+    <!-- class is muliple -->
+    
+    <p id="secondPara" class="redElement bgBlue">This is a another simple paragraph to demonstrate "Multipale class" css Selectors</p>
+
+
+    <p>This is a simple paragraph to demonstrate css Selectors</p>
+
+    <div>
+        <p>This is a simple paragraph inside div to demonstrate css Selectors</p>
+    </div>
+    
+    <p>This is a to demonstrate The group CSS Selectors</p>
+    
+    <span>This is Span</span>
+    <footer>This Is Footer</footer>
+    
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap">
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    /* CSS Reset  for adjust margin of "body"*/
+    body {
+        /* font-family: 'Baloo Bhai', cursive; */
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('images/abs-2.jpg');
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+
+    }
+
+    .left img {
+        width: 91px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 36px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        position: absolute;
+        right: 50px;
+        top: 29px;
+
+    }
+
+    .navbar li {
+
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 13px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .container {
+        /* border: 2px solid white; */
+        margin: 106px 80px;
+        padding: 75px;
+        width: 23%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        /* if we want form input on left then have to type left*/
+        text-align: center;
+        display: block;
+        width: 250px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 3px auto;
+        font-size: 14px;
+        border-radius: 7px;
+    }
+
+    /* we dont need this if we want form input on left*/
+    .container h1 {
+        text-align: center;
+    }
+    
+    /* we dont need this if we want form input on left*/
+    .container button {
+        font-family: 'Baloo Bhai', cursive;
+        font-size: 15px;
+        display: block;
+        width: 85%;
+        margin: 18px auto;
+        border: 2px solid white;
+        border-radius: 7px;
+        background-color: black;
+        color: white;
+    }
+
+    .container button:hover {
+        color: gray;
+    }
+</style>
+
+<body>
+    <header class="header">
+
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="IMAGES/LOGO.jpg" alt="">
+            <div>HV FITNESS</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">ContactUs</a></li>
+            </ul>
+
+        </div>
+        <!-- RIght box for botton -->
+        <div class="right">
+
+            <button class="btn">Sign Up Today</button>
+            <!-- <button class="btn">Email Us</button> -->
+
+
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join Know</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter Your Mobile No">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter Your Maid Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Location">
+            </div>
+            <button class="bts">Submit</button>
+
+        </form>
+    </div>
+    <!-- <div class="container">
+        <h1>BMI CALCULATOR</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="Number" name="" placeholder="Your Hight In Centimeters">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Your Weight">
+            </div>
+            <button class="bts">Compute BMI</button>
+
+            <div class="form-group">
+                <input type="Number" name="" placeholder="Your BMI">
+                
+            </div> -->
+            
+        </form>
+        
+    </div>
+
+</body>
+
+</html>

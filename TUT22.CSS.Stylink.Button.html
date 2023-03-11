@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selector & more designing</title>
+
+    <style>
+        .container {
+            border: 2px solid red;
+            background-color: rgb(223, 245, 201);
+            width: 666px;
+            padding: 34px;
+            margin: 34px auto;
+
+        }
+
+        .btn {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: blueviolet;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+
+        /* to hide under line from hyper link  */
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(68, 3, 3);
+            background-color: #ffffff;
+        }
+        a:visited{
+            background-color: rgb(221, 166, 38);
+        }
+        a:active{
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus reiciendis in consequatur. Harum unde quasi
+            odio consequuntur debitis, numquam eius. Facere doloremque molestias obcaecati ad beatae saepe similique.
+            Natus dolores iusto necessitatibus in ratione.</p>
+        <a href="" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+
+</html>

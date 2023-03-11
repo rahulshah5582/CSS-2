@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Semantic elements = elements with a meaning. -->
+
+    <!-- What are Semantic Elements?: -->
+    <!-- A semantic element clearly describes its meaning to both the browser and the developer.  -->
+
+    <!-- Examples of non-semantic elements: <div> and <span> - Tells nothing about its content. -->
+
+    <!-- Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.  -->
+
+    <!-- Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer"> to indicate navigation, header, and footer.-->
+
+    <!-- Semantic elements are:
+            <article>	    Defines independent, self-contained content
+            <aside>	        Defines content aside from the page content
+            <details>	    Defines additional details that the user can view or hide
+            <figcaption>    Defines a caption for a <figure> element
+            <figure>	    Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+            <footer>	    Defines a footer for a document or section
+            <header>	    Specifies a header for a document or section
+            <main>	        Specifies the main content of a document
+            <mark>	        Defines marked/highlighted text
+            <nav>	        Defines navigation links
+            <section>	    Defines a section in a document
+            <summary>	    Defines a visible heading for a <details> element
+            <time>	        Defines a date/time  -->
+
+
+    <!-- HTML <section> Element -->
+    <!-- The <section> element defines a section in a document.
+    According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading." 
+                                
+    Examples of where a <section> element can be used:
+                                    
+            Chapters
+            Introduction
+            News items
+            Contact information
+            
+            A web page could normally be split into sections for introduction, content, and contact information.-->
+    <h1>section Semantic Elements</h1>
+    <section>
+        <h3>WWF</h3>
+        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the
+            conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was
+            founded in 1961.</p>
+    </section>
+    <section>
+        <h3>WWF's Panda symbol</h3>
+        <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi
+            Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of
+            WWF.</p>
+    </section>
+
+    <!-- HTML <article> Element -->
+    <!--The <article> element specifies independent, self-contained content.
+        An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site. 
+                                                    
+        Examples of where the <article> element can be used:
+                                                        
+            Forum posts
+            Blog posts
+            User comments
+            Product cards
+            Newspaper articles-->
+
+    <h1>Artical Semantic Elements:</h1>
+    <article>
+        <h3>Google Chrome</h3>
+        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web
+            browser today!</p>
+    </article>
+
+    <article>
+        <h3>Mozilla Firefox</h3>
+        <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular
+            web browser since January, 2018.</p>
+    </article>
+
+    <article>
+        <h3>Microsoft Edge</h3>
+        <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet
+            Explorer.</p>
+    </article>
+
+
+    <!-- HTML <header> Element -->
+    <!-- The <header> element represents a container for introductory content or a set of navigational links.
+    
+        A <header> element typically contains:
+            one or more heading elements (<h1> - <h6>)
+            logo or icon
+            authorship information
+
+        Note: You can have several <header> elements in one HTML document. However, <header> cannot be placed within a <footer>, <address> or another <header> element. -->
+
+    <h1>Header Semantic Elements</h1>
+    <article>
+        <header>
+            <h3>What Does WWF Do:</h3>
+            <p>WWF's mission:</p>
+        </header>
+        <p>WWF's mission is to stop the degradation of our planet's natural environment,
+            and build a future in which humans live in harmony with nature.</p>
+    </article>
+
+    <!-- HTML <footer>  Element -->
+    <!-- The <footer> element defines a footer for a document or section.
+    
+        A <footer> element typically contains:
+            authorship information
+            copyright information
+            contact information
+            sitemap
+            back to top links
+            related documents.
+        You can have several <footer> elements in one document.-->
+
+    <h1>Footer Semantic Elements</h1>
+    <footer>
+        <h3>Please go through:</h3>
+        <p>Author: Hege Refsnes</p>
+        <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+    </footer>
+
+    <!-- HTML <nav> Element -->
+    <!--    Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major blocks of
+            navigation links.
+
+            Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content. -->
+
+    <h1>Nav Semantic Elements</h1>
+    <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/jquery/">jQuery</a>
+    </nav>
+
+    <!-- HTML <aside> Element -->
+    <!--    The <aside> element defines some content aside from the content it is placed in (like a sidebar).
+        
+            The <aside> content should be indirectly related to the surrounding content.-->
+
+    <h1>aside Semantic Elements</h1>
+    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great
+        summer together with my family!</p>
+
+    <aside>
+        <h4>Epcot Center:</h4>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions,
+            award-winning fireworks and seasonal special events.</p>
+    </aside>
+
+    <!-- HTML <figure> and <figcaption> Elements -->
+    <!-- The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+
+        The <figcaption> tag defines a caption for a <figure> element. The <figcaption> element can be placed as the first or as the last child of a <figure> element.
+
+        The <img> element defines the actual image/illustration. -->
+
+    <h1>Figure Semantic Elements</h1>
+    <figure>
+        <img src="pic_trulli.jpg" alt="Trulli">
+        <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+    </figure>
+
+    <!-- HTML <summary> Element -->
+
+    <h1>summary Semantic Elements</h1>
+    <summary> Summary Note:</summary>
+    I have keys but no doors. I have space but no room. You can enter but can't leave. what am I?
+    A keyboard
+    A keyboard
+    A keyboard
+    A keyboard
+    A keyboard
+    A keyboard
+    <br><br>
+    <!-- to add multiple word we have to type lorem(number of word we want) + enter  -->
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sunt, sed dolorem ipsam consectetur
+    provident velit nemo. Nostrum porro eveniet cumque dolorem corporis neque, provident natus ducimus
+    architecto quae dignissimos?
+
+    </details>
+
+</body>
+
+</html>

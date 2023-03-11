@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+
+<body>
+    <!-- ALT+DOWN OR UP KEY TO MOVE SELECTED AREA  -->
+    <h2>THIS IS HTML FORMS</h2>
+    <form action="backend.php">
+
+        <!-- FOR INSERT DIVISION IN DATA(SECOND ROW) HAVE TO TYPE "<div>" DIV IS A BLOCK ALIMENT SO NEXT DATA HAVE TO GO IN SECOND ROW -->
+        <br>
+        <div>
+            <!-- FOR INSERT NAME HAVE TO TYPE "input:text" THIS FUNCTION ALSO ASK ID BUT WE SEE IT LETTER -->
+            Name: <input type="text" name="myName">
+        </div>
+        <br>
+
+        <!-- FOR INSERT AGE HAVE TO TYPE "input:number" THIS FUNCTION ALSO ASK ID BUT WE SEE IT LETTER -->
+        <div>
+            Age: <input type="number" name="myAge">
+        </div>
+        <br>
+
+        <!-- FOR INSERT CONTACT NUMBER HAVE TO TYPE "input:number" THIS FUNCTION ALSO ASK ID BUT WE SEE IT LETTER -->
+        <div>
+            My Contact number: <input type="number" name="myontact">
+        </div>
+        <br>
+
+        <div>
+            <!-- FOR INSERT EMAIL HAVE TO TYPE "input:email" THIS FUNCTION ALSO ASK ID BUT WE SEE IT LETTER -->
+            Email: <input type="email" name="myEmail">
+            <div>
+                <br>
+                <div>
+                    <!-- FOR INSERT DATE HAVE TO TYPE "input:date" THIS FUNCTION ALSO ASK ID BUT WE SEE IT LETTER -->
+                    Date Of Birth: <input type="date" name="myDateofbirth">
+                    <div>
+                        <br>
+                        <div>
+                            <!-- FOR INSERT CHECKBOX HAVE TO TYPE "input:checkbox" THIS FUNCTION ALSO ASK ID BUT WE SEE IT LETTER -->
+                            Nationality: Indian<input type="checkbox" name="myNationality">Other<input type="checkbox"
+                                name="myNationality">Specific<input type="text">
+                        </div>
+                        <br>
+                        <!-- FOR INSERT RADIO BUTTON HAVE TO TYPE " input:radio" THIS FUNCTION ALSO ASK ID BUT WE SEE IT LETTER -->
+                        Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+                        Other <input type="radio" name="myGender">
+                    </div>
+                    <br>
+                    <div>
+                        <!-- FOR INSERT LABEL IN WINDOW(TOUCH BOTTON) HAVE TO TYPE "<label for="Invesment Term"> Invesment Term</label>"+ below type "input type" -->
+                        <label for="Invesment Term"> Invesment Term</label> <input type="number" name="Invesment Term"
+                            id="Invesment Term">
+                    </div>
+                </div>
+                <br>
+                <!-- FOR INSERT RADIO BUTTON HAVE TO TYPE " input:radio" THIS FUNCTION ALSO ASK ID BUT WE SEE IT LETTER -->
+                Yearly Income: 3 to 5 lakhs <input type="radio" name="yearlyIncome"> 5 to 10 lakhs <input type="radio"
+                    name="yearlyIncome">
+                Above 10 <input type="radio" name="yearlyIncome">
+            </div>
+            <br>
+
+            <div>
+                <!-- FOR INSERT COMMENT/NOTE AREA HAVE TO TYPE "textarea" THIS FUNCTION ALSO ASK ID BUT WE SEE IT LETTER, WE ALSO DECIDE THE AREA LENGTH AND WIDTH -->
+                <!-- FOR INSERT BRAKE IN AREA HAVE TO TYPE "<br>" BETWEEN LINE/AREA-->
+                Write Your Comment: <br> <textarea name="Write Your Comment" cols="90" rows="10"></textarea>
+            </div>
+            <br>
+            <div>
+                <!-- FOR INSERT PRE DECIDE CHECKBOX HAVE TO TYPE "checked" AT THE AND OF COMMAND/CHECKBOX -->
+                Above Details Are True: <input type="checkbox" checked>
+            </div>
+            <br>
+            <div>
+                <!-- FOR INSERT SELECT BOTTON HAVE TO TYPE "select" + (IN NEXT LINE) "option" AT THE AND OF COMMAND/CHECKBOX -->
+                <label for="IncomeWant"> IncomeWant</label>
+                <select name="Income Want" id="IncomeWant">
+                    <option value="Regular">Regular</option>
+                    <option value="Long">Long</option>
+                    <option value="Short">Short</option>
+                    <!-- FOR INSERT SELECT OPTION DEFAULT HAVE TO TYPE {<option value="Short" selected>Short</option>} -->
+                </select>
+            </div>
+            <br>
+            <div>
+                <!-- FOR INSERT SUBMIT BUTTON HAVE TO TYPE"input:submit" THIS FUNCTION ALSO ASK ID BUT WE SEE IT LETTER-->
+                <input type="submit" value="Submit Now">
+                <!-- FOR INSERT RESET BUTTON HAVE TO TYPE"input:reset" THIS FUNCTION ALSO ASK ID BUT WE SEE IT LETTER-->
+                <input type="reset" value="Reset Now">
+            </div>
+
+
+    </form>
+
+</body>
+
+</html>

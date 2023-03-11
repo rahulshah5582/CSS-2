@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+
+    <style>
+
+        /* to make box-sizing : border-box; , padding, margin default  */
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container
+        {
+            background-color: rgb(231, 230, 241);
+            border: 3px solid rgb(64, 6, 119);
+            border-radius: 23px;  
+            width: 500px;
+
+            /* We can set margin/paddding "default" for top,bottom,left and right like this */
+            
+            /* padding: 55px;
+
+            margin: 34px; */
+
+            /* We can set margin/paddding for top,bottom,left and right like this */
+            /* 
+            padding-top: 79px; 
+            padding-bottom: 79px;
+            padding-right: 34px;
+            padding-left: 79px;
+            
+            margin-top: 34px; 
+            margin-bottom: 34px;
+            margin-right: 34px;
+            margin-left: 34px;
+            */
+
+            /* First Short Cut For Padding/Margin
+                padding: Top Right Bottom Left;
+                    padding: 50px 79px 34px 79px;
+                    
+                margin: Top Right Bottom Left;
+                    margin: 34px 34px 34px 34px;   */
+            
+            /* Second Short Cut For Padding/Margin */
+                /* padding: y(top/bottom) x(left/Right); */
+                    padding: 50px 19px;
+                /* margin: y(top/bottom) x(left/Right) */
+                    margin: 14px 19px;
+
+            /* we can also fix the box */
+             box-sizing: border-box;
+            
+        }
+        body
+        {
+            background-color: rgb(149 128 128);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- BOX Model have three elements padding,border,margin  -->
+    <!-- In Box model(from box outer to iner) Margin come "first",border come "second" and then padding come "third"  -->
+
+    <div class="container">
+        <h3>This is my heading</h3>
+
+        <p id="first">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil dolorem enim deserunt esse fugit voluptatibus eligendi doloribus suscipit assumenda maxime doloremque excepturi quisquam sapiente sit exercitationem dicta, provident ipsa tenetur repellat aperiam blanditiis. Doloremque, aspernatur odio! Eius mollitia veritatis dolorem totam. Tenetur illo alias praesentium fugiat nesciunt, dolore qui necessitatibus.
+        </p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+
+        <p id="second">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil dolorem enim deserunt esse fugit voluptatibus eligendi doloribus suscipit assumenda maxime doloremque excepturi quisquam sapiente sit exercitationem dicta, provident ipsa tenetur repellat aperiam blanditiis. Doloremque, aspernatur odio! Eius mollitia veritatis dolorem totam. Tenetur illo alias praesentium fugiat nesciunt, dolore qui necessitatibus.
+        </p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+
+        <p id="third">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil dolorem enim deserunt esse fugit voluptatibus eligendi doloribus suscipit assumenda maxime doloremque excepturi quisquam sapiente sit exercitationem dicta, provident ipsa tenetur repellat aperiam blanditiis. Doloremque, aspernatur odio! Eius mollitia veritatis dolorem totam. Tenetur illo alias praesentium fugiat nesciunt, dolore qui necessitatibus.
+        </p>
+    </div>
+    
+</body>
+</html>

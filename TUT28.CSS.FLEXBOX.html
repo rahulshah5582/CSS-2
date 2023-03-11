@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+
+    <!-- FLEXBOX is a one-dimensional layout method for laying out items in row or coloumns. -->
+    <!-- CSS flexbox is a better way to align items into a container  -->
+    <!-- Flexbox = flexible + Box  -->
+
+    <style>
+       
+        .container{
+
+            /* To make container height as per container  */
+            /* height: fit-content; */
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+
+            /* FLEX Propertise For Container  */
+
+            /* Initialize the container as a flex box  */
+            display: flex;
+
+            /* Flex properties for flex container  */
+
+            /* flex-direction: row; is a default direction = box in line in "ROW" */
+            /* flex-direction: row;  */
+
+            /* flex-direction: column; = box in line in "column" */
+            /* flex-direction: column;  */
+            
+            /* flex-direction: row-reverse; = box in line in "Reverse ROW" */
+            /* flex-direction: row-reverse;  */
+            
+            /* flex-direction: column-reverse; = box in line in "Reverse Column" */
+            /* flex-direction: column-reverse;  */
+
+            /* flex-wrap: none;= not wraping the box as per "container size", this is a default condition*/
+            /* flex-wrap: none;  */
+            
+            /* flex-wrap: wrap;= wraping the box as per "container size"*/
+            /* flex-wrap: wrap; */
+           
+            /* flex-wrap: wrap-reverse;= wraping the box in reverse mode as per "container size"*/
+            /* flex-wrap: wrap-reverse; */
+
+            /* Specifies how flexbox items are placed in the flexbox.(Edge 12, Firefox 28, Safari 9, Chrome 29, IE 11, Opera 12), flex-flow: <'flex-direction'> || <'flex-wrap'> */
+            /* FLEX short cut  */
+            /* flex-flow: row wrap; */
+
+            /*  justify-content: center; = Make content in center(horizontally)  */
+            /* justify-content: center; */
+            
+            /*  justify-content: space-between; = Give Space between content  */
+            /* justify-content: space-between; */
+            
+            /*  justify-content: space-evenly; = Give Space between content evenly  */
+            /* justify-content: space-evenly; */
+            
+            /*  justify-content: space-around; = Give Space around content evenly  */
+            /* justify-content: space-around; */
+
+            /* align-items: start; = align content in vertically top of the container*/
+            /* align-items: start; */
+
+            /* align-items: center; = align content vertically centre of the container*/
+            /* align-items: center; */
+            
+            /* align-items: center; = align content vertically bottom of the container*/
+            /* align-items: flex-end; */
+            
+            /* align-items: streach; = streach content */
+            /* align-items: stretch; */
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item-1{
+            /* Flex properties for flex container  */
+
+            /* order: 1; = to change the order of property, hire the order = later it show up in the container*/
+            /* order: 1; */
+
+            /* flex-grow: 3;= to give big size to content, hire the number hire the size as per "container size" */
+            /* flex-grow: 2; */
+            
+            /* flex-shrink: 3;= to shrink size to content, hire the number hire the shrink size as per "container size" */
+            /* flex-shrink: 2; */
+           
+            /* flex-basic: 120px;= to big give size(FIX) to content, hire the number hire the size as per "container size" */
+            flex-basis: 300px;
+            /* when flex-direction: is set to row flex-basis: will control width  */
+            /* when flex-direction: is set to column flex-basis: will control height  */
+
+        }
+        #item-2{
+            
+            /* order: 2; */
+            flex-grow: 4;
+            flex-shrink: 3;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <h1>This Is FlexBox</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+
+</body>
+</html>

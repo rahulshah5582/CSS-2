@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITION</title>
+
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: khaki;
+            height: 3444px;
+
+        }
+        /* css position : static(by default), absolute, relative, fixed, sticky */
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+
+
+        /* css positon static  */
+        /* static: default position*/
+        
+        /* #box3{
+            position: static;
+            top: 34px;
+            left: 134px;
+            } */
+
+        /* css positon relative  */
+        /* relative: position the elements relativeative to its normal position and will leave gap at its normal position*/
+        /* if we need gape in exsiting postion then we use "relative position".*/
+        
+        /* #box3 {
+            position: relative;
+            top: 34px;
+            left: 134px;
+            } */
+
+        /* css positon absolute  */
+        /* absolute: position the elements relativeative to its parrent position or say to its first parent(in this case ".container" */
+        /* if we need gape in exsiting postion then we use "relative position".*/
+        
+        /* #box3 {
+            position: absolute;
+            top: 34px;
+            left: 134px;
+
+            } */
+
+        /* css positon fixed  */
+        /* fixed: position the elements relative fixed with browser window to 'chat box' */
+  
+        /* #box3 {
+            position: fixed;
+            right: 4px;
+            bottom: 2px;
+
+        } */
+
+        /* css positon sticky  */
+        /* sticky: position the elements relative fixed with browser window to 'chat box' */
+  
+        #box3 {
+            position: sticky;
+            top: 3px;
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

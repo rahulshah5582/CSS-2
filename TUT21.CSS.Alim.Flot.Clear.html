@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliment Flot And Clear</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 800px;
+            border: 3px solid purple;
+            margin: auto;
+            background-color: rgb(243, 185, 133);
+        }
+
+        .item {
+            border: 3px solid gray;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(248, 238, 238);
+        }
+
+        #fruits {
+            width: 48%;
+            float: left;
+        }
+
+        #computer {
+            width: 48%;
+            float: right;
+        }
+
+        #stationary {
+            width: 48%;
+            float: left;
+        }
+
+        #glass {
+            width: 48%;
+            float: right;
+        }
+
+        #pen {
+            width: 98%;
+            /* clear elements clear left, right, top, bottom  */
+            /* clear: left; can clear float from left  */
+            /* clear: right; can clear float from right  */
+            clear: both;
+        }
+
+        h1 {
+            width: 305px;
+            margin: auto;
+        }
+
+        p,
+        h3 {
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h3>fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro
+                officiis voluptates sapiente temporibus distinctio laborum provident unde, deleniti veritatis hic natus
+                tenetur eaque laudantium id beatae illo totam. Ullam! Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Minus adipisci magni labore porro consequuntur assumenda natus dolor quam earum, ipsa
+                aliquam eum sint quis iste ea quidem numquam, animi amet?
+            </p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro
+                officiis voluptates sapiente temporibus distinctio laborum provident unde, deleniti veritatis hic natus
+                tenetur eaque laudantium id beatae illo totam. Ullam! Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Excepturi tenetur sed praesentium consequuntur earum, sapiente sunt beatae quis nobis odit. Nemo
+                sed distinctio laudantium iusto odio quis voluptas quas aperiam!
+            </p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro
+                officiis voluptates sapiente temporibus distinctio laborum provident unde, deleniti veritatis hic natus
+                tenetur eaque laudantium id beatae illo totam. Ullam!
+            </p>
+        </div>
+
+        <div id="glass" class="item">
+            <h3>glass</h3>
+            <p id="glasspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro
+                officiis voluptates sapiente temporibus distinctio laborum provident unde, deleniti veritatis hic natus
+                tenetur eaque laudantium id beatae illo totam. Ullam!
+        </div>
+
+        <div id="pen" class="item">
+            <h3>pen</h3>
+            <p id="penpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro officiis
+                voluptates sapiente temporibus distinctio laborum provident unde, deleniti veritatis hic natus tenetur
+                eaque laudantium id beatae illo totam. Ullam!</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
